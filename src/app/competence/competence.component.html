@@ -1,0 +1,31 @@
+<h2>Compétences</h2>
+<mat-divider></mat-divider>
+<br>
+<mat-accordion class="header-panelcollabs">
+    <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Java
+            </mat-panel-title>
+            <mat-panel-description>
+                <mat-progress-bar mode="determinate" value="70"></mat-progress-bar>
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <div class="row formation">
+            <div class="col">J'ai commencé à développer en Java dès la première année de BTS. Il s'agit du premier langage de
+                programmation que j'ai appris. Mon apprentissage sur ce langage a duré 2 ans.<br>
+                Une fois arrivé en Bac+3 j'ai continué a développer en Java grâce à mon alternance. En effet l'entreprise Netbee développe des sites internet en Java.
+            </div>
+        </div>
+    </mat-expansion-panel>
+</mat-accordion>
+<br>
+<mat-card>
+    <div class="row">
+        <div class="col-4">Java</div>
+        <div class="col-8">
+            <mat-progress-bar mode="determinate" value="70"></mat-progress-bar>
+        </div>
+    </div>
+</mat-card>

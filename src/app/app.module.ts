@@ -13,12 +13,16 @@ import { FormationComponent } from './formation/formation.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { ExperienceComponent } from './experience/experience.component';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatCardModule} from '@angular/material/card';
+import { CompetenceComponent } from './competence/competence.component';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormationComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    CompetenceComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +34,9 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatIconModule,
     MatDividerModule,
     MatGridListModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatCardModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
