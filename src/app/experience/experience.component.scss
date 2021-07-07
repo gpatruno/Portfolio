@@ -1,0 +1,41 @@
+
+h2 {
+    text-align: left;
+    margin: 16px;
+    font-size: 3rem;
+    color: rgb(10, 4, 4);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.date {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: x-large;
+    color: rgb(0, 77, 177);
+}
+
+.title {
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 5px;
+}
+
+.option {
+    font-style: italic;
+    
+    font-size: 1rem;
+}
+
+.formation {
+    padding: 10px;
+    background-color: gainsboro;
+    border-radius: 5px;
+}
+
+.header-panelcollabs .mat-form-field + .mat-form-field {
+    flex-basis: 0;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 8px;
+}
