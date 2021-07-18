@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , ViewChild} from '@angular/core';
+import {MatAccordion} from '@angular/material/expansion';
 
 @Component({
   selector: 'app-competence',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./competence.component.scss']
 })
 export class CompetenceComponent implements OnInit {
+  @ViewChild(MatAccordion) accordion: MatAccordion;
 
   step = 0;
 
