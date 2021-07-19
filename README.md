@@ -10,4 +10,4 @@
 
 ## Description
 
-Ce projet corresponds à mon Portfolio. J'ai réalisé ce portfolio de A à Z sans utiliser de template.
+Ce projet correspond à mon Portfolio. J'ai réalisé ce portfolio de A à Z sans utiliser de template.
