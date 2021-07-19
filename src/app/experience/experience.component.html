@@ -1,14 +1,17 @@
 <h2>Expériences</h2>
 <mat-divider></mat-divider>
-<br>
-<mat-accordion class="header-panelcollabs">
-    <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+<div>
+    <button mat-stroked-button class="stroked-button" (click)="accordion.openAll()">Étendre</button>
+    <button mat-stroked-button class="stroked-button" (click)="accordion.closeAll()">Réduire</button>
+</div>
+<mat-accordion class="header-panelcollabs" multi>
+    <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)">
         <mat-expansion-panel-header>
             <mat-panel-title>
                 2017 - 2019
             </mat-panel-title>
             <mat-panel-description>
-                Projet    
+                Projet
             </mat-panel-description>
         </mat-expansion-panel-header>
 
@@ -20,7 +23,7 @@
             <div class="col">Marseille</div>
         </div>
     </mat-expansion-panel>
-    <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+    <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)">
         <mat-expansion-panel-header>
             <mat-panel-title>
                 2017 - 2018
@@ -50,7 +53,7 @@
             </div>
         </div>
     </mat-expansion-panel>
-    <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+    <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)">
         <mat-expansion-panel-header>
             <mat-panel-title>
                 2018 - 2019
@@ -76,7 +79,7 @@
         </div>
 
     </mat-expansion-panel>
-    <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+    <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)">
         <mat-expansion-panel-header>
             <mat-panel-title>
                 2019 - 2020
@@ -101,7 +104,7 @@
             </div>
         </div>
     </mat-expansion-panel>
-    <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+    <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)">
         <mat-expansion-panel-header>
             <mat-panel-title>
                 2019 - 2021

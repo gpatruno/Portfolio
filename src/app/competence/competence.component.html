@@ -2,16 +2,19 @@
 <mat-divider></mat-divider>
 <br>
 <mat-accordion class="header-panelcollabs" multi>
-    <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+    <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)">
         <mat-expansion-panel-header>
             <mat-panel-title>
                 <div>
-                    <mat-icon><i class="fab fa-java"></i></mat-icon>&nbsp;
+                    <mat-icon><i class="fab fa-java"></i></mat-icon>
                     <span>Java</span>
                 </div>
             </mat-panel-title>
-            <mat-panel-description>
-                <mat-progress-bar mode="determinate" value="70"></mat-progress-bar>
+            <mat-panel-description style="display: inline;">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                        style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                </div>
             </mat-panel-description>
         </mat-expansion-panel-header>
         <div class="row formation">
@@ -19,20 +22,24 @@
                 langage de
                 programmation que j'ai appris. Mon apprentissage sur ce langage a duré 2 ans.<br>
                 Une fois arrivé en Bac+3 j'ai continué a développer en Java grâce à mon alternance. En effet
-                l'entreprise Netbee développe des sites internet en Java.
+                l'entreprise Netbee développe des sites internet et le Backend en Java.<br>
+                J'ai maintenant 4 ans d'expérences dans le développement en Java.
             </div>
         </div>
     </mat-expansion-panel>
-    <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+    <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)">
         <mat-expansion-panel-header>
             <mat-panel-title>
                 <div>
-                    <mat-icon><i class="fab fa-js-square"></i></mat-icon>&nbsp;
+                    <mat-icon><i class="fab fa-js-square"></i></mat-icon>
                     <span>JavaScript</span>
                 </div>
             </mat-panel-title>
-            <mat-panel-description>
-                <mat-progress-bar mode="determinate" value="70"></mat-progress-bar>
+            <mat-panel-description style="display: inline;">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                        style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                </div>
             </mat-panel-description>
         </mat-expansion-panel-header>
         <div class="row formation">
@@ -40,14 +47,19 @@
             </div>
         </div>
     </mat-expansion-panel>
-    <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+    <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)">
         <mat-expansion-panel-header>
             <mat-panel-title>
-                <mat-icon matTooltip="Node JS"><i class="fab fa-node"></i></mat-icon>
-            </mat-panel-title>
-            <mat-panel-description>
+                <div>
+                    <mat-icon style="padding-right: 30px;"><i class="fab fa-node"></i></mat-icon>
                     Node Js
-                    <mat-progress-bar mode="determinate" value="70"></mat-progress-bar>
+                </div>
+            </mat-panel-title>
+            <mat-panel-description style="display: inline;">
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
             </mat-panel-description>
         </mat-expansion-panel-header>
         <div class="row formation">
@@ -56,4 +68,3 @@
         </div>
     </mat-expansion-panel>
 </mat-accordion>
-<br>

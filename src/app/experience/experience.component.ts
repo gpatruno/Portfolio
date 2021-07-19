@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, ViewChild, OnInit} from '@angular/core';
+import {MatAccordion} from '@angular/material/expansion';
 
 @Component({
   selector: 'app-experience',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./experience.component.scss']
 })
 export class ExperienceComponent implements OnInit {
+  @ViewChild(MatAccordion) accordion: MatAccordion;
 
   step = 0;
 
