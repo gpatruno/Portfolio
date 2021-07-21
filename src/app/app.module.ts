@@ -9,20 +9,25 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatCardModule } from '@angular/material/card';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatTooltipModule } from '@angular/material/tooltip';
+
 import { FormationComponent } from './formation/formation.component';
-import {MatGridListModule} from '@angular/material/grid-list';
 import { ExperienceComponent } from './experience/experience.component';
-import {MatExpansionModule} from '@angular/material/expansion';
-import {MatCardModule} from '@angular/material/card';
 import { CompetenceComponent } from './competence/competence.component';
-import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { AboutmeComponent } from './aboutme/aboutme.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormationComponent,
     ExperienceComponent,
-    CompetenceComponent
+    CompetenceComponent,
+    AboutmeComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +41,9 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     MatGridListModule,
     MatExpansionModule,
     MatCardModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatTabsModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

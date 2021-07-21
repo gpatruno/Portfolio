@@ -1,13 +1,15 @@
 <h2>Compétences</h2>
 <mat-divider></mat-divider>
-<br>
+<div>
+    <button mat-stroked-button class="stroked-button" (click)="accordion.openAll()">Étendre</button>
+    <button mat-stroked-button class="stroked-button" (click)="accordion.closeAll()">Réduire</button>
+</div>
 <mat-accordion class="header-panelcollabs" multi>
     <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)">
         <mat-expansion-panel-header>
             <mat-panel-title>
                 <div>
-                    <mat-icon><i class="fab fa-java"></i></mat-icon>
-                    <span>Java</span>
+                    <mat-icon matTooltip="Java" matTooltipPosition="right"><i class="fab fa-java"></i></mat-icon>
                 </div>
             </mat-panel-title>
             <mat-panel-description style="display: inline;">
@@ -31,8 +33,7 @@
         <mat-expansion-panel-header>
             <mat-panel-title>
                 <div>
-                    <mat-icon><i class="fab fa-js-square"></i></mat-icon>
-                    <span>JavaScript</span>
+                    <mat-icon matTooltip="JavaScript" matTooltipPosition="right" ><i class="fab fa-js-square"></i></mat-icon>
                 </div>
             </mat-panel-title>
             <mat-panel-description style="display: inline;">
@@ -51,8 +52,7 @@
         <mat-expansion-panel-header>
             <mat-panel-title>
                 <div>
-                    <mat-icon style="padding-right: 30px;"><i class="fab fa-node"></i></mat-icon>
-                    Node Js
+                    <mat-icon matTooltip="Node JS" matTooltipPosition="right" ><i class="fab fa-node"></i></mat-icon>
                 </div>
             </mat-panel-title>
             <mat-panel-description style="display: inline;">
