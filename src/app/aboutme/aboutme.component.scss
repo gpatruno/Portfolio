@@ -5,3 +5,24 @@ h2 {
     color: rgb(10, 4, 4);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+.icon-entity {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 100px;
+    height: 60px;
+}
+
+mat-card {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.preview-card {
+    max-width: 400px;
+  }
+  
+.header-image {
+background-image: url("../../assets/icon-cocktailapp.png");
+background-size: cover;
+}

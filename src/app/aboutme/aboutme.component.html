@@ -1,8 +1,167 @@
 <h2>A propos de moi</h2>
 <mat-tab-group animationDuration="2000ms">
-    <mat-tab label="Profile"> 
+    <mat-tab label="Profile">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <mat-card>
+                        <div class="row">
+                            <div class="col" style="font-weight: bold;">Les langues </div>
+                            <div class="col">
+                                <img class="icon-entity" src="./assets/flag-fr.png" />
+                            </div>
+                            <div class="col">
+                                <img class="icon-entity" src="./assets/flag-an.png" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col"></div>
+                            <div class="col">
+                                Langue maternelle
+                            </div>
+                            <div class="col">
+                                Lu, écrit, parlé
+                            </div>
+                        </div>
+                    </mat-card>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <mat-card>
+                        <div class="row">
+                            <div class="col" style="font-weight: bold;">Permis </div>
+                            <div class="col">
+                                <mat-icon><i class="fas fa-car"></i></mat-icon>
+                            </div>
+                            <div class="col">
+                                <mat-icon><i class="fas fa-motorcycle"></i></mat-icon>
+                            </div>
+                            <div class="col">
+                                <mat-icon><i class="fas fa-ship"></i></mat-icon>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col"></div>
+                            <div class="col">Voiture</div>
+                            <div class="col">Moto</div>
+                            <div class="col">Bateau</div>
+                        </div>
+                    </mat-card>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <mat-card class="preview-card">
+                        <mat-card-header>
+                            <div mat-card-avatar class="header-image"></div>
+                            <mat-card-title>CocktailApp</mat-card-title>
+                            <mat-card-subtitle>Actuellement disponible sur le play store</mat-card-subtitle>
+                        </mat-card-header>
+                        <img mat-card-image src="../../assets/preview-cocktailapp2.png" alt="Aperçu de l'application mobile">
+                        <mat-card-content>
+                            <p>
+                                Application Mobile qui permets de référencer tous les Cocktails avec les ingrédients nécessaire pour leurs réalisations. <br>
+                                Cette application a vu le jour grâce à un projet de l'école Ynov, étant très investi dans celle-ci j'ai décider de la continuer même une fois le projet terminé. 
+                            </p>
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <button mat-button class="menu-button" (click)="redirect('https://github.com/gpatruno/CocktailApp')">
+                                <div>
+                                    <mat-icon><i class="fab fa-github-square"></i></mat-icon>
+                                </div>
+                            </button>
+                            <button mat-button class="menu-button" (click)="redirect('https://play.google.com/store/apps/details?id=com.gpatruno.cocktailapp')">
+                                <div>
+                                    <mat-icon><i class="fab fa-google-play"></i></mat-icon>
+                                </div>
+                            </button>
+                        </mat-card-actions>
+                    </mat-card>
 
+                </div>
+            </div>
+        </div>
     </mat-tab>
-    <mat-tab label="Interêts">Content 2</mat-tab>
-    <mat-tab label="Third">Content 3</mat-tab>
+    <mat-tab label="Interêts">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <mat-card>
+                        <div class="row">
+                            <div class="col-2" style="font-weight: bold;">Les Voyages</div>
+                            <div class="col">
+                                <span>
+                                    J'ai eu la chance d'avoir pu voayagé dans 11 pays différents.
+                                </span>
+                            </div>
+                            <div class="col">
+                                <span>
+                                    Italie, Australie, Malte, Ecosse, Chine, Singapour, Malaisie, Angleterre, Espagne,
+                                    Hongrie, Belgique.
+                                </span>
+                            </div>
+                        </div>
+                    </mat-card>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <mat-card>
+                        <div class="row">
+                            <div class="col-2" style="font-weight: bold;">Les Sports</div>
+                            <div class="col">
+                                <span>
+                                    Depuis l'âge des mes 12 ans je n'ai jamais arrêter de faire du sport quelque soit
+                                    l'activité.
+                                </span>
+                            </div>
+                            <div class="col">
+                                <span>
+                                    Équitation (Galop 4) / Handball (5 ans) / Planche à voile (2 ans) / Snowboard (7
+                                    ans) / Vélo de route et de montagne.
+                                </span>
+                            </div>
+                        </div>
+                    </mat-card>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <mat-card>
+                        <div class="row">
+                            <div class="col-2" style="font-weight: bold;">La Musique</div>
+                            <div class="col">
+                                <span>
+                                    Je suis passioné par la musique et je peux pas m'en passer.
+                                </span>
+                            </div>
+                            <div class="col">
+                                <span>
+                                    J'ai fait de la bass dans une école de musique et faisant parti d'un groupe de
+                                    musique j'ai déjà participé a des petits concerts. <br>
+                                    Mais j'ai été passionné par le métier de DJ, je me suis constituer tout le matèriel
+                                    nécessaire pour animer des soirées/anniversaires.
+                                </span>
+                            </div>
+                        </div>
+                    </mat-card>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <mat-card>
+                        <div class="row">
+                            <div class="col-2" style="font-weight: bold;">Les Jeux vidéos</div>
+                            <div class="col">
+                                <span>
+                                    Je joue a tout type de jeux sur PC.
+                                </span>
+                            </div>
+                        </div>
+                    </mat-card>
+                </div>
+            </div>
+        </div>
+    </mat-tab>
 </mat-tab-group>

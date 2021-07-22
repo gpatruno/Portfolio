@@ -1,5 +1,5 @@
-import {Component, ViewChild, OnInit} from '@angular/core';
-import {MatAccordion} from '@angular/material/expansion';
+import { Component, ViewChild, OnInit } from '@angular/core';
+import { MatAccordion } from '@angular/material/expansion';
 
 @Component({
   selector: 'app-experience',
@@ -18,6 +18,10 @@ export class ExperienceComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+  
+  ngAfterViewInit() {
+    this.accordion.closeAll();
   }
 
 }

@@ -20,4 +20,8 @@ export class CompetenceComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  ngAfterViewInit() {
+    this.accordion.closeAll();
+  }
+
 }

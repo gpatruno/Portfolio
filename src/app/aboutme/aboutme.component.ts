@@ -12,4 +12,7 @@ export class AboutmeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  redirect(url) {
+    window.open(url, "_blank");
+  }
 }
