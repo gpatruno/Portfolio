@@ -15,3 +15,22 @@ h2 {
 .stroked-button {
     margin: 8px 8px 8px 0;
 }
+
+.stroked-button:hover {
+    background-color: #3184FD;
+}
+
+.subtitle {
+    font-weight: bold;
+}
+
+.icon-entity {
+    margin-top: 10px;
+    width: 65px;
+    height: 65px;
+    // border-radius: 50%;
+}
+
+mat-card {
+    margin-bottom: 10px;
+}

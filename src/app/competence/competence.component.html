@@ -1,70 +1,328 @@
 <h2>Compétences</h2>
-<mat-divider></mat-divider>
 <div>
-    <button mat-stroked-button class="stroked-button" (click)="accordion.openAll()">Étendre</button>
-    <button mat-stroked-button class="stroked-button" (click)="accordion.closeAll()">Réduire</button>
+    <mat-tab-group animationDuration="2000ms">
+        <mat-tab label="Langage de programmation">
+            <div>
+                <button mat-stroked-button class="stroked-button" (click)="accordion.openAll()">Étendre</button>
+                <button mat-stroked-button class="stroked-button" (click)="accordion.closeAll()">Réduire</button>
+            </div>
+            <mat-accordion class="header-panelcollabs" multi>
+                <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <div>
+                                <mat-icon matTooltip="Java" matTooltipPosition="right"><i class="fab fa-java"></i>
+                                </mat-icon>
+                            </div>
+                        </mat-panel-title>
+                        <mat-panel-description style="display: inline;">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                    style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%
+                                </div>
+                            </div>
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <div class="row formation">
+                        <div class="col">J'ai commencé à développer en Java dès la première année de BTS. Il s'agit du
+                            premier langage de programmation que j'ai appris. <br>
+                            Mon apprentissage sur ce langage a duré 2 ans.<br>
+                            Une fois arrivé en Bac+3 j'ai continué a développer en Java grâce à mon alternance. En effet
+                            l'entreprise Netbee développe des sites internet et le Backend en Java.<br>
+                            J'ai maintenant 4 ans d'expérences dans le développement en Java.
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+                <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <div>
+                                <mat-icon matTooltip="JavaScript" matTooltipPosition="right"><i
+                                        class="fab fa-js-square"></i></mat-icon>
+                            </div>
+                        </mat-panel-title>
+                        <mat-panel-description style="display: inline;">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                    style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%
+                                </div>
+                            </div>
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <div class="row formation">
+                        <div class="col">
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+                <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <div>
+                                <mat-icon matTooltip="Node JS" matTooltipPosition="right"><i class="fab fa-node"></i>
+                                </mat-icon>
+                            </div>
+                        </mat-panel-title>
+                        <mat-panel-description style="display: inline;">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <div class="row formation">
+                        <div class="col">
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+                <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <div>
+                                <mat-icon matTooltip="C#" matTooltipPosition="right">C#</mat-icon>
+                            </div>
+                        </mat-panel-title>
+                        <mat-panel-description style="display: inline;">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <div class="row formation">
+                        <div class="col">
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+                <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <div>
+                                <mat-icon matTooltip="SQL" matTooltipPosition="right">SQL</mat-icon>
+                            </div>
+                        </mat-panel-title>
+                        <mat-panel-description style="display: inline;">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                    style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%
+                                </div>
+                            </div>
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <div class="row formation">
+                        <div class="col">
+                            J'appris le langage MySQL au BTS puis je n'ai jamais cessé d'utiliser le langage SQL pour mes projets personnel ou que ça soit à l'entreprise. <br>
+                            Au sein de l'entreprise Netbee j'utilise le langage SQL Oracle et PostgreSQL.
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+                <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <div>
+                                <mat-icon matTooltip="HTML 5" matTooltipPosition="right"><i class="fab fa-html5"></i>
+                                </mat-icon>
+                            </div>
+                        </mat-panel-title>
+                        <mat-panel-description style="display: inline;">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <div class="row formation">
+                        <div class="col">
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+                <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" style="margin-bottom: 8px;">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <div>
+                                <mat-icon matTooltip="CSS" matTooltipPosition="right"><i class="fab fa-css3-alt"></i>
+                                </mat-icon>
+                            </div>
+                        </mat-panel-title>
+                        <mat-panel-description style="display: inline;">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <div class="row formation">
+                        <div class="col">
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+            </mat-accordion>
+            <div class="row">
+                <div class="col">
+                    <mat-card>
+                        <div class="row">
+                            <div class="col" style="font-weight: bold;">Windows</div>
+                            <div class="col">
+                                <img class="icon-entity" src="./assets/icon-github.svg" />
+                            </div>
+                        </div>
+                    </mat-card>
+                </div>
+                <div class="col">
+                    <mat-card>
+                        <div class="row">
+                            <div class="col" style="font-weight: bold;">Linux</div>
+                            <div class="col">
+                                <img class="icon-entity" src="./assets/icon-smartsvn.png" />
+                            </div>
+                        </div>
+                    </mat-card>
+                </div>
+                <div class="col">
+                    <mat-card>
+                        <div class="row">
+                            <div class="col" style="font-weight: bold;">Putty</div>
+                            <div class="col">
+                                <img class="icon-entity" src="./assets/icon-putty.png" />
+                            </div>
+                        </div>
+                    </mat-card>
+                </div>
+            </div>
+        </mat-tab>
+        <mat-tab label="Logiciel">
+            <br>
+            <div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <mat-card>
+                                <div class="row">
+                                    <div class="col" style="font-weight: bold;">Netbeans</div>
+                                    <div class="col">
+                                        <img class="icon-entity" src="./assets/icon-netbeans.svg" />
+                                    </div>
+                                </div>
+                            </mat-card>
+                        </div>
+                        <div class="col">
+                            <mat-card>
+                                <div class="row">
+                                    <div class="col" style="font-weight: bold;">Xampp</div>
+                                    <div class="col">
+                                        <img class="icon-entity" src="./assets/icon-xampp.png" />
+                                    </div>
+                                </div>
+                            </mat-card>
+                        </div>
+                        <div class="col">
+                            <mat-card>
+                                <div class="row">
+                                    <div class="col" style="font-weight: bold;">DBeaver</div>
+                                    <div class="col">
+                                        <img class="icon-entity" src="./assets/icon-dbeaver.png" />
+                                    </div>
+                                </div>
+                            </mat-card>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <mat-card>
+                                <div class="row">
+                                    <div class="col" style="font-weight: bold;">Android Studio</div>
+                                    <div class="col">
+                                        <img class="icon-entity" src="./assets/icon-android.png" />
+                                    </div>
+                                </div>
+                            </mat-card>
+                        </div>
+                        <div class="col">
+                            <mat-card>
+                                <div class="row">
+                                    <div class="col" style="font-weight: bold;">Unity</div>
+                                    <div class="col">
+                                        <img class="icon-entity" src="./assets/icon-unity.png" />
+                                    </div>
+                                </div>
+                            </mat-card>
+                        </div>
+                        <div class="col">
+                            <mat-card>
+                                <div class="row">
+                                    <div class="col" style="font-weight: bold;">Win SCP</div>
+                                    <div class="col">
+                                        <img class="icon-entity" src="./assets/icon-winscp.png" />
+                                    </div>
+                                </div>
+                            </mat-card>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <mat-card>
+                                <div class="row">
+                                    <div class="col" style="font-weight: bold;">Visual Studio</div>
+                                    <div class="col">
+                                        <img class="icon-entity" src="./assets/icon-vs.png" />
+                                    </div>
+                                </div>
+                            </mat-card>
+                        </div>
+                        <div class="col">
+                            <mat-card>
+                                <div class="row">
+                                    <div class="col" style="font-weight: bold;">Visual Studio Code</div>
+                                    <div class="col">
+                                        <img class="icon-entity" src="./assets/icon-vscode.png" />
+                                    </div>
+                                </div>
+                            </mat-card>
+                        </div>
+                        <div class="col">
+                            <mat-card>
+                                <div class="row">
+                                    <div class="col" style="font-weight: bold;">Jenkins</div>
+                                    <div class="col">
+                                        <img class="icon-entity" src="./assets/icon-jenkins.png" />
+                                    </div>
+                                </div>
+                            </mat-card>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <mat-card>
+                                <div class="row">
+                                    <div class="col" style="font-weight: bold;">Github</div>
+                                    <div class="col">
+                                        <img class="icon-entity" src="./assets/icon-github.svg" />
+                                    </div>
+                                </div>
+                            </mat-card>
+                        </div>
+                        <div class="col">
+                            <mat-card>
+                                <div class="row">
+                                    <div class="col" style="font-weight: bold;">SmartSVN</div>
+                                    <div class="col">
+                                        <img class="icon-entity" src="./assets/icon-smartsvn.png" />
+                                    </div>
+                                </div>
+                            </mat-card>
+                        </div>
+                        <div class="col">
+                            <mat-card>
+                                <div class="row">
+                                    <div class="col" style="font-weight: bold;">Putty</div>
+                                    <div class="col">
+                                        <img class="icon-entity" src="./assets/icon-putty.png" />
+                                    </div>
+                                </div>
+                            </mat-card>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </mat-tab>
+    </mat-tab-group>
 </div>
-<mat-accordion class="header-panelcollabs" multi>
-    <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)">
-        <mat-expansion-panel-header>
-            <mat-panel-title>
-                <div>
-                    <mat-icon matTooltip="Java" matTooltipPosition="right"><i class="fab fa-java"></i></mat-icon>
-                </div>
-            </mat-panel-title>
-            <mat-panel-description style="display: inline;">
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                        style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-                </div>
-            </mat-panel-description>
-        </mat-expansion-panel-header>
-        <div class="row formation">
-            <div class="col">J'ai commencé à développer en Java dès la première année de BTS. Il s'agit du premier
-                langage de
-                programmation que j'ai appris. Mon apprentissage sur ce langage a duré 2 ans.<br>
-                Une fois arrivé en Bac+3 j'ai continué a développer en Java grâce à mon alternance. En effet
-                l'entreprise Netbee développe des sites internet et le Backend en Java.<br>
-                J'ai maintenant 4 ans d'expérences dans le développement en Java.
-            </div>
-        </div>
-    </mat-expansion-panel>
-    <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)">
-        <mat-expansion-panel-header>
-            <mat-panel-title>
-                <div>
-                    <mat-icon matTooltip="JavaScript" matTooltipPosition="right" ><i class="fab fa-js-square"></i></mat-icon>
-                </div>
-            </mat-panel-title>
-            <mat-panel-description style="display: inline;">
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                        style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-                </div>
-            </mat-panel-description>
-        </mat-expansion-panel-header>
-        <div class="row formation">
-            <div class="col">
-            </div>
-        </div>
-    </mat-expansion-panel>
-    <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)">
-        <mat-expansion-panel-header>
-            <mat-panel-title>
-                <div>
-                    <mat-icon matTooltip="Node JS" matTooltipPosition="right" ><i class="fab fa-node"></i></mat-icon>
-                </div>
-            </mat-panel-title>
-            <mat-panel-description style="display: inline;">
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
-                        aria-valuemax="100"></div>
-                </div>
-            </mat-panel-description>
-        </mat-expansion-panel-header>
-        <div class="row formation">
-            <div class="col">
-            </div>
-        </div>
-    </mat-expansion-panel>
-</mat-accordion>
