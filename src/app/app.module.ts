@@ -15,6 +15,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 import { FormationComponent } from './formation/formation.component';
 import { ExperienceComponent } from './experience/experience.component';
@@ -43,7 +44,8 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
     MatCardModule,
     MatProgressBarModule,
     MatTabsModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,82 +1,83 @@
-<mat-toolbar>
-  <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
-    <mat-icon *ngIf="!sidenav.opened">menu</mat-icon>
-    <mat-icon *ngIf="sidenav.opened">close</mat-icon>
-  </button>
-  Portfolio
-</mat-toolbar>
+<div  [class.dark-theme]="isDarkTheme" >
+  <mat-toolbar>
+    <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+      <mat-icon *ngIf="!sidenav.opened">menu</mat-icon>
+      <mat-icon *ngIf="sidenav.opened">close</mat-icon>
+    </button>
+    <span> Portfolio</span>
+    <span class="spacer"></span>
+    <mat-slide-toggle (click)="changeTheme()">Mode Sombre</mat-slide-toggle>
+  </mat-toolbar>
 
-<mat-sidenav-container>
-  <mat-sidenav #sidenav="matSidenav">
-    <img class="avatar mat-elevation-z8" src="./assets/profile.JPG" />
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav="matSidenav">
+      <img class="avatar mat-elevation-z8" src="./assets/profile.JPG" />
 
-    <h2 class="name">Gaétan PATRUNO</h2>
-    <p class="designation">Développeur Web, Mobile, Logiciel & IoT</p>
+      <h2 class="name">Gaétan PATRUNO</h2>
+      <p class="designation">Développeur Web, Mobile, Logiciel & IoT</p>
 
-    <mat-divider></mat-divider>
+      <mat-divider></mat-divider>
 
-    <span class="menu-button">
-      <mat-icon>mail</mat-icon> <a class="mailto" href="mailto:gaetan.pat@free.fr">gaetan.pat@free.fr</a>
-    </span>
-    <br>
-    <span class="menu-button">
-      <mat-icon>phone</mat-icon> 06 52 04 99 06
-    </span>
-    <br>
-    <span class="menu-button">
-      <mat-icon>home</mat-icon> Aix-en-Provence
-    </span>
+      <span class="menu-button">
+        <mat-icon>mail</mat-icon> <a class="mailto" href="mailto:gaetan.patruno@gmail.com">gaetan.patruno@gmail.com</a>
+      </span>
+      <br>
+      <span class="menu-button">
+        <mat-icon>home</mat-icon> Aix-en-Provence
+      </span>
 
-    <mat-divider></mat-divider>
+      <mat-divider></mat-divider>
 
-    <button mat-button class="menu-button" [routerLink]="'formation'">
-      <div>
-        <mat-icon><i class="fas fa-graduation-cap"></i></mat-icon>&nbsp;
-        <span>Formations</span>
+      <button mat-button class="menu-button" [routerLink]="'formation'">
+        <div>
+          <mat-icon><i class="fas fa-graduation-cap"></i></mat-icon>&nbsp;
+          <span>Formations</span>
+        </div>
+      </button>
+      <button mat-button class="menu-button" [routerLink]="'experience'">
+        <div>
+          <mat-icon><i class="fas fa-briefcase"></i></mat-icon>&nbsp;
+          <span>Expériences</span>
+        </div>
+      </button>
+      <button mat-button class="menu-button" [routerLink]="'competence'">
+        <div>
+          <mat-icon><i class="fas fa-tasks"></i></mat-icon>&nbsp;
+          <span>Compétences</span>
+        </div>
+      </button>
+      <button mat-button class="menu-button" [routerLink]="'aboutme'">
+        <div>
+          <mat-icon><i class="fas fa-user-circle"></i></mat-icon>&nbsp;
+          <span>A propos de moi</span>
+        </div>
+      </button>
+
+      <mat-divider></mat-divider>
+
+      <button mat-button class="menu-button">
+        <mat-icon>picture_as_pdf</mat-icon>
+        <span>CV</span>
+      </button>
+      <button mat-button class="menu-button"
+        (click)="redirect('https://www.linkedin.com/in/ga%C3%A9tan-patruno-6396aa174/')">
+        <div>
+          <mat-icon><i class="fab fa-linkedin"></i></mat-icon>
+          <span>Linkedin</span>
+        </div>
+      </button>
+      <button mat-button class="menu-button" (click)="redirect('https://github.com/gpatruno')">
+        <div>
+          <mat-icon><i class="fab fa-github"></i></mat-icon>
+          <span>GitHub</span>
+        </div>
+      </button>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <div class="content mat-elevation-z8">
+        <router-outlet></router-outlet>
       </div>
-    </button>
-    <button mat-button class="menu-button" [routerLink]="'experience'">
-      <div>
-        <mat-icon><i class="fas fa-briefcase"></i></mat-icon>&nbsp;
-        <span>Expériences</span>
-      </div>
-    </button>
-    <button mat-button class="menu-button" [routerLink]="'competence'">
-      <div>
-        <mat-icon><i class="fas fa-tasks"></i></mat-icon>&nbsp;
-        <span>Compétences</span>
-      </div>
-    </button>
-    <button mat-button class="menu-button" [routerLink]="'aboutme'">
-      <div>
-        <mat-icon><i class="fas fa-user-circle"></i></mat-icon>&nbsp;
-        <span>A propos de moi</span>
-      </div>
-    </button>
-
-    <mat-divider></mat-divider>
-
-    <button mat-button class="menu-button">
-      <mat-icon>picture_as_pdf</mat-icon>
-      <span>CV</span>
-    </button>
-    <button mat-button class="menu-button" (click)="redirect('https://www.linkedin.com/in/ga%C3%A9tan-patruno-6396aa174/')" >
-      <div>
-        <mat-icon><i class="fab fa-linkedin"></i></mat-icon>
-        <span>Linkedin</span>
-      </div>
-    </button>
-    <button mat-button class="menu-button" (click)="redirect('https://github.com/gpatruno')">
-      <div>
-        <mat-icon><i class="fab fa-github"></i></mat-icon>
-        <span>GitHub</span>
-      </div>
-    </button>
-  </mat-sidenav>
-
-  <mat-sidenav-content>
-    <div class="content mat-elevation-z8">
-      <router-outlet></router-outlet>
-    </div>
-  </mat-sidenav-content>
-</mat-sidenav-container>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

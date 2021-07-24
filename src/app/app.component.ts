@@ -1,4 +1,5 @@
 import { Component, HostListener, ViewChild } from '@angular/core';
+import { OverlayContainer } from '@angular/cdk/overlay';
 import { MatSidenav } from '@angular/material/sidenav';
 import { BreakpointObserver } from '@angular/cdk/layout';
 import { Router } from '@angular/router';
@@ -11,10 +12,13 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'portfolio';
   public innerWidth: any;
+  //User preference
+  isDarkTheme = false;
 
   @ViewChild(MatSidenav) sidenav!: MatSidenav;
 
-  constructor(private observer: BreakpointObserver, private router: Router) {
+  
+  constructor(private observer: BreakpointObserver, private router: Router, private overlayContainer: OverlayContainer) {
 
   }
 
@@ -46,5 +50,15 @@ export class AppComponent {
     })
   }
 
+  changeTheme() {
+    this.isDarkTheme = !this.isDarkTheme;
+    if (this.isDarkTheme) {
+      this.overlayContainer.getContainerElement().classList.add('dark-theme');
+    } else {
+      this.overlayContainer
+        .getContainerElement()
+        .classList.remove('dark-theme');
+    }
+  }
 
 }

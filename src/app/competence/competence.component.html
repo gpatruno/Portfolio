@@ -138,7 +138,7 @@
                         </div>
                     </div>
                 </mat-expansion-panel>
-                <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" style="margin-bottom: 8px;">
+                <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)">
                     <mat-expansion-panel-header>
                         <mat-panel-title>
                             <div>
@@ -159,7 +159,50 @@
                         </div>
                     </div>
                 </mat-expansion-panel>
+                <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <div>
+                                <mat-icon matTooltip="GIT" matTooltipPosition="right"><i class="fab fa-git-square"></i>
+                                </mat-icon>
+                            </div>
+                        </mat-panel-title>
+                        <mat-panel-description style="display: inline;">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                    style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%
+                                </div>
+                            </div>
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <div class="row formation">
+                        <div class="col">
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+                <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <div>
+                                <mat-icon matTooltip="Kotlin" matTooltipPosition="right" ><img src="./assets/logo-kotlin.png" style="width: 18px; height: 24px;"/>
+                                </mat-icon>
+                            </div>
+                        </mat-panel-title>
+                        <mat-panel-description style="display: inline;">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                    style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%
+                                </div>
+                            </div>
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <div class="row formation">
+                        <div class="col">
+                        </div>
+                    </div>
+                </mat-expansion-panel>
             </mat-accordion>
+            <div class="div-separator"></div>
             <div class="row">
                 <div class="col">
                     <mat-card>
@@ -196,6 +239,34 @@
                             </div>
                             <div class="col">
                                 <img class="icon-entity" src="./assets/icon-macos.png" />
+                            </div>
+                        </div>
+                    </mat-card>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <mat-card>
+                        <div class="row">
+                            <div class="col" style="font-weight: bold;">Android</div>
+                            <div class="col">
+                                <span>80% (Kotlin & Java)</span>
+                            </div>
+                            <div class="col">
+                                <img class="icon-entity" src="./assets/icon-android.png" />
+                            </div>
+                        </div>
+                    </mat-card>
+                </div>
+                <div class="col">
+                    <mat-card>
+                        <div class="row">
+                            <div class="col" style="font-weight: bold;">IOS</div>
+                            <div class="col">
+                                <span>5%</span>
+                            </div>
+                            <div class="col">
+                                <img class="icon-entity mat-elevation-z8" src="./assets/icon-ios.png" style="border-radius: 35px;"/>
                             </div>
                         </div>
                     </mat-card>
@@ -244,7 +315,7 @@
                                 <div class="row">
                                     <div class="col" style="font-weight: bold;">Android Studio</div>
                                     <div class="col">
-                                        <img class="icon-entity" src="./assets/icon-android.png" />
+                                        <img class="icon-entity" src="./assets/icon-androidstudio.png" />
                                     </div>
                                 </div>
                             </mat-card>
@@ -303,16 +374,6 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col">
-                            <mat-card>
-                                <div class="row">
-                                    <div class="col" style="font-weight: bold;">Github</div>
-                                    <div class="col">
-                                        <img class="icon-entity" src="./assets/icon-github.svg" />
-                                    </div>
-                                </div>
-                            </mat-card>
-                        </div>
                         <div class="col">
                             <mat-card>
                                 <div class="row">
