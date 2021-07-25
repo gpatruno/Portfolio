@@ -1,4 +1,4 @@
-<div  [class.dark-theme]="isDarkTheme" >
+<div [class.dark-theme]="isDarkTheme">
   <mat-toolbar>
     <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
       <mat-icon *ngIf="!sidenav.opened">menu</mat-icon>
@@ -6,7 +6,16 @@
     </button>
     <span> Portfolio</span>
     <span class="spacer"></span>
-    <mat-slide-toggle (click)="changeTheme()">Mode Sombre</mat-slide-toggle>
+    <div class="mat-elevation-z8" style="padding: 10px; border-radius: 20px;">
+      <!-- <mat-icon *ngIf="!isDarkTheme"><i class="fas fa-moon"></i></mat-icon>
+      <mat-icon *ngIf="isDarkTheme"><i class="fas fa-sun"></i></mat-icon> -->
+      <mat-slide-toggle (click)="changeTheme()">
+        <mat-icon  class="darkmode" *ngIf="!isDarkTheme"><i class="fas fa-moon"></i></mat-icon>
+        <mat-icon  class="darkmode" *ngIf="isDarkTheme"><i class="fas fa-sun"></i></mat-icon>
+        <!-- <span *ngIf="isDarkTheme"> Mode Sombre</span>
+        <span *ngIf="!isDarkTheme"> Mode Clair</span> -->
+      </mat-slide-toggle>
+    </div>
   </mat-toolbar>
 
   <mat-sidenav-container>

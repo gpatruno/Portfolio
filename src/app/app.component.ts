@@ -14,7 +14,6 @@ export class AppComponent {
   public innerWidth: any;
   //User preference
   isDarkTheme = false;
-
   @ViewChild(MatSidenav) sidenav!: MatSidenav;
 
   
