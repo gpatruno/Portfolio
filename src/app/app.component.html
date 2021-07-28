@@ -7,13 +7,8 @@
     <span> Portfolio</span>
     <span class="spacer"></span>
     <div class="mat-elevation-z8" style="padding: 10px; border-radius: 20px;">
-      <!-- <mat-icon *ngIf="!isDarkTheme"><i class="fas fa-moon"></i></mat-icon>
-      <mat-icon *ngIf="isDarkTheme"><i class="fas fa-sun"></i></mat-icon> -->
       <mat-slide-toggle (click)="changeTheme()">
-        <mat-icon  class="darkmode" *ngIf="!isDarkTheme"><i class="fas fa-moon"></i></mat-icon>
-        <mat-icon  class="darkmode" *ngIf="isDarkTheme"><i class="fas fa-sun"></i></mat-icon>
-        <!-- <span *ngIf="isDarkTheme"> Mode Sombre</span>
-        <span *ngIf="!isDarkTheme"> Mode Clair</span> -->
+        <mat-icon  class="darkmode" ><i *ngIf="!isDarkTheme" class="fas fa-moon"></i><i *ngIf="isDarkTheme" class="fas fa-sun"></i></mat-icon>
       </mat-slide-toggle>
     </div>
   </mat-toolbar>
@@ -21,7 +16,6 @@
   <mat-sidenav-container>
     <mat-sidenav #sidenav="matSidenav">
       <img class="avatar mat-elevation-z8" src="./assets/profile.JPG" />
-
       <h2 class="name">Gaétan PATRUNO</h2>
       <p class="designation">Développeur Web, Mobile, Logiciel & IoT</p>
 
