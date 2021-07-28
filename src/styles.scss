@@ -49,9 +49,34 @@ $portfolio-dark-theme: mat-light-theme ((
     )
 ));
 
+.formation {
+  padding: 10px;
+  background-color: gainsboro;
+  border-radius: 5px;
+}
+
+
+.date {
+  font-weight: bold;
+  font-size: x-large;
+  color: rgb(0, 77, 177);
+}
+
 .dark-theme {
     @include angular-material-color($dark-theme);
+    .formation {
+      padding: 10px;
+      background-color: rgb(83, 83, 83);
+      border-radius: 5px;
+    }
+
+    
+  .date {
+    font-weight: bold;
+    font-size: x-large;
+    color: rgb(0, 110, 255);
   }
+}
   
   // Override typography for all Angular Material, including mat-base-typography and all components.
   @include angular-material-typography($typography);
@@ -67,5 +92,5 @@ $portfolio-dark-theme: mat-light-theme ((
   margin: 16px;
   font-size: 2rem;
   // color: rgb(10, 4, 4);
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, 'Calibri', Times, serif;
 }

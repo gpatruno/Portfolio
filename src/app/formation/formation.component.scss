@@ -1,13 +1,4 @@
 
-
-
-.date {
-    text-decoration: underline;
-    font-weight: bold;
-    font-size: x-large;
-    color: rgb(0, 77, 177);
-}
-
 .title {
     padding-bottom: 10px;
     font-weight: bold;
@@ -24,5 +15,12 @@
     margin-bottom: 5px;
     width: 75px;
     height: 35px;
+    border-radius: 5%;
+}
+
+.icon-small {
+    margin-bottom: 5px;
+    width: 55px;
+    height: 55px;
     border-radius: 5%;
 }
