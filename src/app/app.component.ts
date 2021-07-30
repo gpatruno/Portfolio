@@ -37,6 +37,10 @@ export class AppComponent {
     window.open(url, "_blank");
   }
 
+  f1() {
+    window.open('/assets/cv-gpatruno.pdf', '_blank');
+ } 
+
   ngAfterViewInit() {
     this.observer.observe(['(max-width: 900px)']).subscribe((res) => {
       if (res.matches) {
