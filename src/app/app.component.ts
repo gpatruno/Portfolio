@@ -13,7 +13,7 @@ export class AppComponent {
   title = 'portfolio';
   public innerWidth: any;
   //User preference
-  isDarkTheme = false;
+  isDarkTheme = true;
   @ViewChild(MatSidenav) sidenav!: MatSidenav;
 
   
