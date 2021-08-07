@@ -8,7 +8,8 @@
     <span class="spacer"></span>
     <div class="mat-elevation-z8" style="padding: 10px; border-radius: 20px;">
       <mat-slide-toggle (click)="changeTheme()">
-        <mat-icon  class="darkmode" ><i *ngIf="!isDarkTheme" class="fas fa-moon"></i><i *ngIf="isDarkTheme" class="fas fa-sun"></i></mat-icon>
+        <mat-icon class="darkmode"><i *ngIf="!isDarkTheme" class="fas fa-moon"></i><i *ngIf="isDarkTheme"
+            class="fas fa-sun"></i></mat-icon>
       </mat-slide-toggle>
     </div>
   </mat-toolbar>
@@ -62,7 +63,7 @@
         <div>
           <mat-icon><i class="far fa-file-pdf"></i></mat-icon>
           <span>CV</span>
-      </div>
+        </div>
       </button>
       <button mat-button class="menu-button"
         (click)="redirect('https://www.linkedin.com/in/ga%C3%A9tan-patruno-6396aa174/')">
@@ -83,8 +84,7 @@
           <span>Gitlab</span>
         </div>
       </button>
-      <button mat-button class="menu-button"
-        (click)="redirect('https://armandpat.wixsite.com/portfolio')">
+      <button mat-button class="menu-button" (click)="redirect('https://armandpat.wixsite.com/portfolio')">
         <div>
           <mat-icon><i class="fas fa-portrait"></i></mat-icon>
           <span>Portfolio (Wix)</span>
@@ -93,7 +93,10 @@
     </mat-sidenav>
 
     <mat-sidenav-content>
-      <div class="content mat-elevation-z8">
+      <div *ngIf="sidenav.mode === 'side'"  class="content-web mat-elevation-z8">
+        <router-outlet></router-outlet>
+      </div>
+      <div *ngIf="sidenav.mode === 'over'" class="content-mobile mat-elevation-z8">
         <router-outlet></router-outlet>
       </div>
     </mat-sidenav-content>
