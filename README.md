@@ -1,5 +1,5 @@
 # Portfolio
-
+![Build Status](https://github.com/gpatruno/Portfolio/workflows/Angular%20CI/badge.svg)
 ![alt text](src/assets/profile-icon.JPG)
 
 ## Informations utiles
