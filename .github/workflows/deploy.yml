@@ -38,3 +38,4 @@ jobs:
         local-dir: ./dist/
         server-dir: ./var/www/html/
         dangerous-clean-slate: true
+        log-level: verbose
