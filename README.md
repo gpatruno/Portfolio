@@ -1,5 +1,4 @@
 
-![Build Status](https://github.com/gpatruno/Portfolio/workflows/Angular%Build/badge.svg)
 ![Build Status](https://github.com/gpatruno/Portfolio/actions/workflows/main.yml/badge.svg)
 
 # Portfolio
