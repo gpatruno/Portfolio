@@ -33,9 +33,9 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
         server: ${{ env.SERVER }}
-        username: ${{ secrets.PROD_USER }}
+        username: gpatruno
         password: ${{ secrets.PROD_PASSWORD }}
         local-dir: ./dist/
-        server-dir: ./var/www/html/
-        dangerous-clean-slate: true
+        server-dir: /var/www/html/
+        # dangerous-clean-slate: true
         log-level: verbose
