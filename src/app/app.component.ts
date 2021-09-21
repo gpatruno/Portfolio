@@ -30,7 +30,6 @@ export class AppComponent {
   ngOnInit() {
     this.innerWidth = window.innerWidth;
     console.log('size width : ' + this.innerWidth);
-
   }
 
   redirect(url) {
