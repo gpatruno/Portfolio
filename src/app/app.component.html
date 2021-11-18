@@ -32,54 +32,30 @@
 
       <mat-divider></mat-divider>
 
-      <a mat-button class="menu-button" href="formation">
+      <button mat-button class="menu-button" [routerLink]="'formation'">
         <div>
           <mat-icon><i class="fas fa-graduation-cap"></i></mat-icon>&nbsp;
           <span>Formations</span>
         </div>
-      </a>
-      <!-- <button mat-button class="menu-button" [routerLink]="'formation'">
-        <div>
-          <mat-icon><i class="fas fa-graduation-cap"></i></mat-icon>&nbsp;
-          <span>Formations</span>
-        </div>
-      </button> -->
-      <a mat-button class="menu-button" href="experience">
+      </button>
+      <button mat-button class="menu-button" [routerLink]="'experience'">
         <div>
           <mat-icon><i class="fas fa-briefcase"></i></mat-icon>&nbsp;
           <span>Expériences</span>
         </div>
-      </a>
-      <!-- <button mat-button class="menu-button" [routerLink]="'experience'">
-        <div>
-          <mat-icon><i class="fas fa-briefcase"></i></mat-icon>&nbsp;
-          <span>Expériences</span>
-        </div>
-      </button> -->
-      <a mat-button class="menu-button" href="competence">
+      </button>
+      <button mat-button class="menu-button" [routerLink]="'competence'">
         <div>
           <mat-icon><i class="fas fa-tasks"></i></mat-icon>&nbsp;
           <span>Compétences</span>
         </div>
-      </a>
-      <!-- <button mat-button class="menu-button" [routerLink]="'competence'">
-        <div>
-          <mat-icon><i class="fas fa-tasks"></i></mat-icon>&nbsp;
-          <span>Compétences</span>
-        </div>
-      </button> -->
-      <a mat-button class="menu-button" href="aboutme">
+      </button>
+      <button mat-button class="menu-button" [routerLink]="'aboutme'">
         <div>
           <mat-icon><i class="fas fa-user-circle"></i></mat-icon>&nbsp;
           <span>A propos de moi</span>
         </div>
-      </a>
-      <!-- <button mat-button class="menu-button" [routerLink]="'aboutme'">
-        <div>
-          <mat-icon><i class="fas fa-user-circle"></i></mat-icon>&nbsp;
-          <span>A propos de moi</span>
-        </div>
-      </button> -->
+      </button>
 
       <mat-divider></mat-divider>
 
@@ -117,10 +93,7 @@
     </mat-sidenav>
 
     <mat-sidenav-content>
-      <div *ngIf="sidenav.mode === 'side'" class="content-web mat-elevation-z8">
-        <router-outlet></router-outlet>
-      </div>
-      <div *ngIf="sidenav.mode === 'over'" class="content-mobile mat-elevation-z8">
+      <div class="content-web mat-elevation-z8">
         <router-outlet></router-outlet>
       </div>
     </mat-sidenav-content>
