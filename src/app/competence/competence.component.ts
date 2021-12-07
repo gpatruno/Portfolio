@@ -21,7 +21,8 @@ export class CompetenceComponent implements OnInit {
   }
 
   ngAfterViewInit() {
-    this.accordion.closeAll();
+    // this.accordion.closeAll();
+    this.accordion.openAll();
   }
 
 }

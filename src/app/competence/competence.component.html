@@ -1,4 +1,6 @@
 <span class="title-section">Compétences</span>
+
+<hr>
 <div>
     <mat-tab-group animationDuration="2000ms">
         <mat-tab label="Langage de programmation">
@@ -25,11 +27,11 @@
                     </mat-expansion-panel-header>
                     <div class="row formation">
                         <div class="col">J'ai commencé à développer en Java dès la première année de BTS. Il s'agit du
-                            premier langage de programmation que j'ai appris. <br>
+                            premier langage de programmation que j'ai découvert. <br>
                             Mon apprentissage sur ce langage a duré 2 ans.<br>
                             Une fois arrivé en Bac+3 j'ai continué a développer en Java grâce à mon alternance. En effet
-                            l'entreprise Netbee développe des sites internet et le Backend en Java.<br>
-                            J'ai maintenant 4 ans d'expérences dans le développement en Java.
+                            l'entreprise Netbee développe des sites internet et des API en Java.<br>
+                            J'ai maintenant 4 ans d'expérence dans le développement en Java.
                         </div>
                     </div>
                 </mat-expansion-panel>
@@ -37,8 +39,12 @@
                     <mat-expansion-panel-header>
                         <mat-panel-title>
                             <div>
-                                <mat-icon matTooltip="JavaScript" matTooltipPosition="right"><i
-                                        class="fab fa-js-square"></i></mat-icon>
+                                <mat-icon matTooltip="JavaScript" matTooltipPosition="right">
+                                    <i class="fab fa-js-square"></i>
+                                </mat-icon>
+                                <mat-icon matTooltip="NodeJS" matTooltipPosition="right">
+                                    <i class="fab fa-node"></i>
+                                </mat-icon>
                             </div>
                         </mat-panel-title>
                         <mat-panel-description style="display: inline;">
@@ -51,7 +57,11 @@
                     </mat-expansion-panel-header>
                     <div class="row formation">
                         <div class="col">
-                            J'utilise le Javascript dans tous les projets que ça soit côté serveur (API) ou frontend (Création de fonction dynamique). 
+                            J'utilise actuellement le Javascript dans tous mes projets que ça soit côté Backend (API) ou Frontend. 
+                            Je développe en javascript généralement pour faire des API avec la plateforme NodeJS. <br>
+                            Cela fait maintenant 3 ans que je développe toutes mes API en NodeJS en JavaScript ou avec une surcouche de TypeScript. <br>
+                            De plus lors du développement de certain projet j'ai dû y intégrer des services externe tels que Stripe, Firebase et l'envoi de mail grâce à un nom de domaine.<br>
+                            Et pour finir je sais déployer et mettre en place une API NodeJS sur un serveur Linux (OS Debian) avec nom de domaine + certification SSL (HTTPS).
                         </div>
                     </div>
                 </mat-expansion-panel>
@@ -59,7 +69,11 @@
                     <mat-expansion-panel-header>
                         <mat-panel-title>
                             <div>
-                                <mat-icon matTooltip="Node JS" matTooltipPosition="right"><i class="fab fa-node"></i>
+                                <mat-icon matTooltip="Angular" matTooltipPosition="right"><i class="fab fa-angular"></i>
+                                </mat-icon>
+                                <mat-icon matTooltip="HTML 5" matTooltipPosition="right"><i class="fab fa-html5"></i>
+                                </mat-icon>
+                                <mat-icon matTooltip="CSS" matTooltipPosition="right"><i class="fab fa-css3-alt"></i>
                                 </mat-icon>
                             </div>
                         </mat-panel-title>
@@ -73,6 +87,9 @@
                     </mat-expansion-panel-header>
                     <div class="row formation">
                         <div class="col">
+                            J'ai découvert le framework Angular qui utilise du TypeScript en Bachelor 3. Depuis cette découverte je l'utilise quelque soit le projet.<br>
+                            Je ne cesse d'apprendre et d'utiliser des nouvelles fonctionnalitées du framework chaque jour. <br>
+                            De plus je sais déployer un site Angular sur un serveur Linux (OS Debian) avec nom de domaine + certification SSL (HTTPS). 
                         </div>
                     </div>
                 </mat-expansion-panel>
@@ -93,6 +110,11 @@
                     </mat-expansion-panel-header>
                     <div class="row formation">
                         <div class="col">
+                            J'ai découvert le C# pendant mes stages de BTS. 
+                            Connaissant déjà le Java j'ai rapidement remarqué la ressemblance entre les deux langages de programmation. <br>
+                            Ce qui m'a permis de l'utiliser facilement. 
+                            J'ai réalisé très peu de projet en C# et je ne développe pas avec ce langage de programmation que ça soit en entreprise ou pour mes projets perso.<br>
+                            C'est pour cela que j'estime ne pas avoir une bonne connaissance de ce langage. 
                         </div>
                     </div>
                 </mat-expansion-panel>
@@ -113,50 +135,10 @@
                     </mat-expansion-panel-header>
                     <div class="row formation">
                         <div class="col">
-                            J'appris le langage MySQL au BTS puis je n'ai jamais cessé d'utiliser le langage SQL pour mes projets personnel ou que ça soit à l'entreprise. <br>
-                            Au sein de l'entreprise Netbee j'utilise le langage SQL Oracle et PostgreSQL.
-                        </div>
-                    </div>
-                </mat-expansion-panel>
-                <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)">
-                    <mat-expansion-panel-header>
-                        <mat-panel-title>
-                            <div>
-                                <mat-icon matTooltip="HTML 5" matTooltipPosition="right"><i class="fab fa-html5"></i>
-                                </mat-icon>
-                            </div>
-                        </mat-panel-title>
-                        <mat-panel-description style="display: inline;">
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                                    style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%
-                                </div>
-                            </div>
-                        </mat-panel-description>
-                    </mat-expansion-panel-header>
-                    <div class="row formation">
-                        <div class="col">
-                        </div>
-                    </div>
-                </mat-expansion-panel>
-                <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)">
-                    <mat-expansion-panel-header>
-                        <mat-panel-title>
-                            <div>
-                                <mat-icon matTooltip="CSS" matTooltipPosition="right"><i class="fab fa-css3-alt"></i>
-                                </mat-icon>
-                            </div>
-                        </mat-panel-title>
-                        <mat-panel-description style="display: inline;">
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                                    style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%
-                                </div>
-                            </div>
-                        </mat-panel-description>
-                    </mat-expansion-panel-header>
-                    <div class="row formation">
-                        <div class="col">
+                            J'utilise le langage SQL depuis ma première année de BTS, aujourd'hui encore j'utilise le SQL dans tout type de SGBD tels que PostgreSQL et Oracle.<br>
+                            Je sais réaliser des MCD (Modèle Conceptuel de Données) en respectant les propriétés ACID (Atomicité Cohérence Isolation Durabilité) du langage SQL.<br>
+                            Ainsi je sais mettre en place le SGBD PostgreSQL sur un serveur Linux (OS Debian).  
+                            Au sein de l'entreprise je conceptionne 
                         </div>
                     </div>
                 </mat-expansion-panel>
@@ -283,7 +265,7 @@
                                 <div class="row">
                                     <div class="col" style="font-weight: bold;">Netbeans</div>
                                     <div class="col">
-                                        <img class="icon-entity" src="./assets/icon-netbeans.svg" />
+                                        <img class="icon-entity" src="./assets/icon-netbeans.png" />
                                     </div>
                                 </div>
                             </mat-card>
@@ -380,6 +362,16 @@
                                     <div class="col" style="font-weight: bold;">SmartSVN</div>
                                     <div class="col">
                                         <img class="icon-entity" src="./assets/icon-smartsvn.png" />
+                                    </div>
+                                </div>
+                            </mat-card>
+                        </div>
+                        <div class="col">
+                            <mat-card class="my-card">
+                                <div class="row">
+                                    <div class="col" style="font-weight: bold;">Postman</div>
+                                    <div class="col">
+                                        <img class="icon-entity"  style="border-radius: 52%;" src="./assets/icon-postman.png" />
                                     </div>
                                 </div>
                             </mat-card>

@@ -4,12 +4,15 @@
       <mat-icon *ngIf="!sidenav.opened">menu</mat-icon>
       <mat-icon *ngIf="sidenav.opened">close</mat-icon>
     </button>
-    <span> <img class="icon mat-elevation-z8" src="./assets/icon-gp.png" /> Portfolio</span>
+    <!-- <span> <img class="icon mat-elevation-z8" src="./assets/icon-gp.png" /> Portfolio</span> -->
+    <span>Portfolio</span>
     <span class="spacer"></span>
     <div class="mat-elevation-z8" style="padding: 10px; border-radius: 20px;">
       <mat-slide-toggle (click)="changeTheme()">
-        <mat-icon class="darkmode"><i *ngIf="!isDarkTheme" class="fas fa-moon"></i><i *ngIf="isDarkTheme"
-            class="fas fa-sun"></i></mat-icon>
+        <mat-icon class="darkmode">
+          <i *ngIf="!isDarkTheme" class="fas fa-sun"></i>
+          <i *ngIf="isDarkTheme" class="fas fa-moon"></i>
+        </mat-icon>
       </mat-slide-toggle>
     </div>
   </mat-toolbar>
@@ -22,10 +25,10 @@
 
       <mat-divider></mat-divider>
 
-      <span class="menu-button" matTooltip="gaetan.patruno@gmail.com">
+      <!-- <span class="menu-button" matTooltip="gaetan.patruno@gmail.com">
         <mat-icon>mail</mat-icon> <a class="mailto" href="mailto:gaetan.patruno@gmail.com">envoyer un mail</a>
       </span>
-      <br>
+      <br> -->
       <span class="menu-button">
         <mat-icon>home</mat-icon> Aix-en-Provence
       </span>
@@ -59,12 +62,12 @@
 
       <mat-divider></mat-divider>
 
-      <button mat-button class="menu-button" (click)="f1()">
+      <!-- <button mat-button class="menu-button" (click)="f1()">
         <div>
           <mat-icon><i class="far fa-file-pdf"></i></mat-icon>
           <span>CV</span>
         </div>
-      </button>
+      </button> -->
       <button mat-button class="menu-button"
         (click)="redirect('https://www.linkedin.com/in/ga%C3%A9tan-patruno-6396aa174/')">
         <div>
@@ -84,12 +87,12 @@
           <span>Gitlab</span>
         </div>
       </button>
-      <button mat-button class="menu-button" (click)="redirect('https://armandpat.wixsite.com/portfolio')">
+      <!-- <button mat-button class="menu-button" (click)="redirect('https://armandpat.wixsite.com/portfolio')">
         <div>
           <mat-icon><i class="fas fa-portrait"></i></mat-icon>
           <span>Portfolio (Wix)</span>
         </div>
-      </button>
+      </button> -->
     </mat-sidenav>
 
     <mat-sidenav-content>
