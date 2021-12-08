@@ -2,9 +2,11 @@
 ![Build Status](https://github.com/gpatruno/Portfolio/actions/workflows/main.yml/badge.svg)
 [![Deploy Portfolio on Server](https://github.com/gpatruno/Portfolio/actions/workflows/deploy.yml/badge.svg)](https://github.com/gpatruno/Portfolio/actions/workflows/deploy.yml)
 
+![alt text](src/assets/profile-icon.JPG)
+
 # Portfolio
 
-![alt text](src/assets/profile-icon.JPG)
+ * [Lien Portfolio](https://gpatruno.mira-ceti.ovh/)
 
 ## Informations utiles
 
