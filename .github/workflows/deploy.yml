@@ -29,13 +29,6 @@ jobs:
       
     - name: List Files
       run: ls -al
-      
-      # Show how to print unmasked GitHub secrets to the console
-    - name: Step 1 - Echo out a GitHub Actions Secret to the logs
-      run: |
-        echo "The GitHub Action Secret will be masked:  "
-        echo ${{ secrets.HOST }} + " " + ${{ secrets.PORT }}
-        echo "Trick to echo GitHub Actions Secret:  " + ${{ secrets.USERNAME }}
     
     - name: SCP Files
       uses: appleboy/scp-action@master
@@ -44,5 +37,5 @@ jobs:
         username: ${{ secrets.USERNAME }}
         port: ${{ secrets.PORT }}
         key: ${{ secrets.PRIV_KEY }}
-        source: "./dist/*"
-        target: "/home/gpatruno/gitworkflow"
+        source: "./dist/portfolio"
+        target: "/home/${{ secrets.USERNAME }}/gitworkflow"
