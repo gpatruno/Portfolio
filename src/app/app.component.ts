@@ -16,7 +16,6 @@ export class AppComponent {
   isDarkTheme = false;
   @ViewChild(MatSidenav) sidenav!: MatSidenav;
 
-  
   constructor(private observer: BreakpointObserver, private router: Router, private overlayContainer: OverlayContainer) {
 
   }
