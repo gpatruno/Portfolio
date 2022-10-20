@@ -132,6 +132,34 @@
                     <mat-expansion-panel-header>
                         <mat-panel-title>
                             <div>
+                                <mat-icon matTooltip="Docker" matTooltipPosition="right"><i class="fab fa-docker"></i></mat-icon>
+                                <mat-icon matTooltip="" matTooltipPosition="right"><i class=""></i>
+                                </mat-icon>
+                                <mat-icon matTooltip="" matTooltipPosition="right"><i class=""></i>
+                                </mat-icon>
+                            </div>
+                        </mat-panel-title>
+                        <mat-panel-description style="display: inline;">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                    style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%
+                                </div>
+                            </div>
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <div class="row formation">
+                        <div class="col">
+                            J'utilise Docker sur mon serveur perso depuis 1 an maintenant. <br>
+                            En effet grâce à Docker j'héberge plusieurs services différents tels que : Jellyfin, Postgres, MariaDB, Bookstack, FileBrowser, Nextcloud et OpenVPN.<br>
+                            Docker un outil indispensable pour gérer plusieurs services différents sur un même serveur. Il me manque des notions pour concevoir des images. <br>
+                            Cependant je sais mettre en place et déployer des images via Docker ou via Docker-compose.
+                        </div>
+                    </div>
+                </mat-expansion-panel>
+                <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <div>
                                 <mat-icon matTooltip="SQL" matTooltipPosition="right">SQL</mat-icon>
                                 <mat-icon matTooltip="" matTooltipPosition="right"><i class=""></i>
                                 </mat-icon>
