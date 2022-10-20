@@ -4,22 +4,23 @@
 <mat-tab-group animationDuration="2000ms">
     <mat-tab label="Profil">
         <div class="container">
-            <div class="row">
+            <div class="row" style="margin-top: 10px;">
                 <div class="col">
                     <mat-card>
+                        <mat-card-header>
+                            <mat-card-title style="font-weight: bold;">Langue</mat-card-title>
+                        </mat-card-header>
                         <div class="row">
-                            <div class="col" style="font-weight: bold; margin-top: 30px;">Langues </div>
                             <div class="col">
                                 <img class="icon-entity" src="./assets/flag-fr.png" />
                             </div>
                             <div class="col">
-                                <img class="icon-entity" src="./assets/flag-an.png" />
+                                Langue maternelle
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col"></div>
                             <div class="col">
-                                Langue maternelle
+                                <img class="icon-entity" src="./assets/flag-an.png" />
                             </div>
                             <div class="col">
                                 Lu, écrit, parlé
@@ -31,8 +32,10 @@
             <div class="row">
                 <div class="col">
                     <mat-card>
+                        <mat-card-header>
+                            <mat-card-title style="font-weight: bold;">Permis</mat-card-title>
+                        </mat-card-header>
                         <div class="row">
-                            <div class="col" style="font-weight: bold;">Permis </div>
                             <div class="col">
                                 <mat-icon><i class="fas fa-car"></i></mat-icon>
                             </div>
@@ -44,7 +47,6 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col"></div>
                             <div class="col">Voiture</div>
                             <div class="col">Moto</div>
                             <div class="col">Bateau</div>
@@ -57,23 +59,29 @@
                     <mat-card class="preview-card">
                         <mat-card-header>
                             <div mat-card-avatar class="header-image mat-elevation-z8"></div>
-                            <mat-card-title>CocktailApp</mat-card-title>
+                            <mat-card-title style="font-weight: bold;">CocktailApp</mat-card-title>
                             <mat-card-subtitle>Actuellement disponible sur le play store</mat-card-subtitle>
                         </mat-card-header>
-                        <img mat-card-image src="../../assets/preview-cocktailapp2.png" alt="Aperçu de l'application mobile">
+                        <img mat-card-image src="../../assets/preview-cocktailapp2.png"
+                            alt="Aperçu de l'application mobile">
                         <mat-card-content>
                             <p>
-                                Application Mobile qui permet de référencer tous les Cocktails avec les ingrédients nécessaires pour leurs réalisations. <br>
-                                Cette application a vu le jour grâce à un projet de l'école Ynov, étant très investi dans celle-ci j'ai décidé de poursuivre le développement par passion après avoir rendu le projet.
+                                Application Mobile qui permet de référencer tous les Cocktails avec les ingrédients
+                                nécessaires pour leurs réalisations. <br>
+                                Cette application a vu le jour grâce à un projet de l'école Ynov, étant très investi
+                                dans celle-ci j'ai décidé de poursuivre le développement par passion après avoir rendu
+                                le projet.
                             </p>
                         </mat-card-content>
                         <mat-card-actions>
-                            <button mat-button class="menu-button" (click)="redirect('https://github.com/gpatruno/CocktailApp')">
+                            <button mat-button class="menu-button"
+                                (click)="redirect('https://github.com/gpatruno/CocktailApp')">
                                 <div>
                                     <mat-icon><i class="fab fa-github-square"></i></mat-icon>
                                 </div>
                             </button>
-                            <button mat-button class="menu-button" (click)="redirect('https://play.google.com/store/apps/details?id=com.gpatruno.cocktailapp')">
+                            <button mat-button class="menu-button"
+                                (click)="redirect('https://play.google.com/store/apps/details?id=com.gpatruno.cocktailapp')">
                                 <div>
                                     <mat-icon><i class="fab fa-google-play"></i></mat-icon>
                                 </div>
@@ -84,8 +92,10 @@
                 <div class="col">
                     <mat-card class="preview-card">
                         <mat-card-header>
-                            <div mat-card-avatar style="background-image: url('../../assets/icon-pepog.png'); background-size: cover;" class="mat-elevation-z8"></div>
-                            <mat-card-title>Mon profil</mat-card-title>
+                            <div mat-card-avatar
+                                style="background-image: url('../../assets/icon-pepog.png'); background-size: cover;"
+                                class="mat-elevation-z8"></div>
+                            <mat-card-title style="font-weight: bold;">Mon profil</mat-card-title>
                             <mat-card-subtitle>Si une image devait me représenter</mat-card-subtitle>
                         </mat-card-header>
                         <img mat-card-image src="../../assets/code-works.jpg" alt="Aperçu de l'application mobile">
@@ -102,19 +112,17 @@
     </mat-tab>
     <mat-tab label="Intérêts">
         <div class="container">
-            <div class="row">
+            <div class="row" style="margin-top: 10px;">
                 <div class="col">
                     <mat-card>
+                        <mat-card-header>
+                            <mat-card-title style="font-weight: bold;"> Voyages <i class="fas fa-plane-departure" style="margin-left: 10px;"></i> </mat-card-title>
+                        </mat-card-header>
                         <div class="row">
-                            <div class="col-2" style="font-weight: bold;">Voyages</div>
-                            <div class="col-2">
-                                <mat-icon>
-                                    <i class="fas fa-plane-departure"></i>
-                                </mat-icon>
-                            </div>
                             <div class="col">
                                 <span>
-                                    Italie, Australie, Malte, Ecosse, Chine, Singapour, Malaisie, Angleterre, Espagne,
+                                    Italie, Australie, Malte, Ecosse, Chine, Singapour, Malaisie, Angleterre,
+                                    Espagne,
                                     Hongrie, Belgique.
                                 </span>
                             </div>
@@ -125,13 +133,10 @@
             <div class="row">
                 <div class="col">
                     <mat-card>
+                        <mat-card-header>
+                            <mat-card-title style="font-weight: bold;"> Sports <i class="fas fa-biking" style="margin-left: 10px;"></i> </mat-card-title>
+                        </mat-card-header>
                         <div class="row">
-                            <div class="col-2" style="font-weight: bold;">Sports</div>
-                            <div class="col-2">
-                                <mat-icon>
-                                    <i class="fas fa-biking"></i>
-                                </mat-icon>
-                            </div>
                             <div class="col">
                                 <span>
                                     Équitation (Galop 4) / Handball (5 ans) / Planche à voile (2 ans) / Snowboard (7
@@ -145,16 +150,15 @@
             <div class="row">
                 <div class="col">
                     <mat-card>
+                        <mat-card-header>
+                            <mat-card-title style="font-weight: bold;"> Musique <i class="fas fa-music" style="margin-left: 10px;"></i> </mat-card-title>
+                        </mat-card-header>
                         <div class="row">
-                            <div class="col-2" style="font-weight: bold;">Musique</div>
-                            <div class="col-2">
-                                <mat-icon>
-                                    <i class="fas fa-music"></i>
-                                </mat-icon>
-                            </div>
                             <div class="col">
                                 <span>
-                                    Mordu de musique, j'ai joué de la bass dans une école de musique, j'ai eu l'occassion de participé à des petits concerts grâce à un groupe monté avec des amis. <br>
+                                    Mordu de musique, j'ai joué de la bass dans une école de musique, j'ai eu
+                                    l'occassion de participé à des petits concerts grâce à un groupe monté avec des
+                                    amis. <br>
                                     Egalement, passionné par le métier de DJ, je me suis constitué tout le matériel
                                     nécessaire pour animer des soirées/anniversaires.
                                 </span>
@@ -166,16 +170,14 @@
             <div class="row">
                 <div class="col">
                     <mat-card>
+                        <mat-card-header>
+                            <mat-card-title style="font-weight: bold;"> Jeux vidéos <i class="fas fa-gamepad" style="margin-left: 10px;"></i> </mat-card-title>
+                        </mat-card-header>
                         <div class="row">
-                            <div class="col-2" style="font-weight: bold;">Jeux vidéos</div>
-                            <div class="col-2">
-                                <mat-icon>
-                                    <i class="fas fa-gamepad"></i>
-                                </mat-icon>
-                            </div>
                             <div class="col">
                                 <span>
-                                    League of Legends / Rocket League / Guild Wars 2 / Raft / Minecraft / Among Us / Valorant / Apex
+                                    League of Legends / TFT / Rocket League / Guild Wars 2 / Raft / Minecraft / Among Us /
+                                    Valorant / Apex / Satisfactory
                                 </span>
                             </div>
                         </div>
