@@ -63,7 +63,7 @@
                             <mat-card-subtitle>Actuellement disponible sur le play store</mat-card-subtitle>
                         </mat-card-header>
                         <img mat-card-image src="../../assets/preview-cocktailapp2.png"
-                            alt="Aperçu de l'application mobile">
+                            alt="Aperçu de l'application mobile" style="max-height: 370px;">
                         <mat-card-content>
                             <p>
                                 Application Mobile qui permet de référencer tous les Cocktails avec les ingrédients
@@ -98,12 +98,41 @@
                             <mat-card-title style="font-weight: bold;">Mon profil</mat-card-title>
                             <mat-card-subtitle>Si une image devait me représenter</mat-card-subtitle>
                         </mat-card-header>
-                        <img mat-card-image src="../../assets/code-works.jpg" alt="Aperçu de l'application mobile">
+                        <img mat-card-image src="../../assets/code-works.jpg" alt="Aperçu de l'application mobile" style="max-height: 370px;">
                         <mat-card-content>
                             <p>
                             </p>
                         </mat-card-content>
                         <mat-card-actions>
+                            <button mat-button class="menu-button" [disabled]="true">
+                                <div>
+                                    <mat-icon><i class="fas fa-user-circle"></i></mat-icon>
+                                </div>
+                            </button>
+                        </mat-card-actions>
+                    </mat-card>
+                </div>
+                <div class="col">
+                    <mat-card class="preview-card">
+                        <mat-card-header>
+                            <div mat-card-avatar
+                                style="background-image: url('../../assets/bookstack-logo.png'); background-size: cover;"
+                                class="mat-elevation-z8"></div>
+                            <mat-card-title style="font-weight: bold;">La documentation</mat-card-title>
+                            <mat-card-subtitle>Un bon développeur rédige toujours de la doc</mat-card-subtitle>
+                        </mat-card-header>
+                        <img mat-card-image src="../../assets/Bookstack-resize.png" alt="Aperçu de la documentation que j'ai rédigé" style="max-height: 370px;">
+                        <mat-card-content>
+                            <p>
+                            </p>
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <button mat-button class="menu-button"
+                                (click)="redirect('https://wiki.mira-ceti.ovh')">
+                                <div>
+                                    <mat-icon><i class="fas fa-external-link-alt"></i></mat-icon>
+                                </div>
+                            </button>
                         </mat-card-actions>
                     </mat-card>
                 </div>
