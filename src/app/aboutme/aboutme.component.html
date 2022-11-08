@@ -54,6 +54,7 @@
                     </mat-card>
                 </div>
             </div>
+            <hr>
             <div class="row">
                 <div class="col">
                     <mat-card class="preview-card">
@@ -98,7 +99,8 @@
                             <mat-card-title style="font-weight: bold;">Mon profil</mat-card-title>
                             <mat-card-subtitle>Si une image devait me représenter</mat-card-subtitle>
                         </mat-card-header>
-                        <img mat-card-image src="../../assets/code-works.jpg" alt="Aperçu de l'application mobile" style="max-height: 370px;">
+                        <img mat-card-image src="../../assets/code-works.jpg" alt="Aperçu de l'application mobile"
+                            style="max-height: 370px;">
                         <mat-card-content>
                             <p>
                             </p>
@@ -121,16 +123,51 @@
                             <mat-card-title style="font-weight: bold;">La documentation</mat-card-title>
                             <mat-card-subtitle>Un bon développeur rédige toujours de la doc</mat-card-subtitle>
                         </mat-card-header>
-                        <img mat-card-image src="../../assets/Bookstack-resize.png" alt="Aperçu de la documentation que j'ai rédigé" style="max-height: 370px;">
+                        <img mat-card-image src="../../assets/Bookstack-resize.png"
+                            alt="Aperçu de la documentation que j'ai rédigé" style="max-height: 370px;">
                         <mat-card-content>
                             <p>
                             </p>
                         </mat-card-content>
                         <mat-card-actions>
-                            <button mat-button class="menu-button"
-                                (click)="redirect('https://wiki.mira-ceti.ovh')">
+                            <button mat-button class="menu-button" (click)="redirect('https://wiki.mira-ceti.ovh')">
                                 <div>
                                     <mat-icon><i class="fas fa-external-link-alt"></i></mat-icon>
+                                </div>
+                            </button>
+                        </mat-card-actions>
+                    </mat-card>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <mat-card class="preview-card">
+                        <mat-card-header>
+                            <div mat-card-avatar
+                                style="background-image: url('../../assets/checkserv-logo.png'); background-size: cover;"
+                                class="mat-elevation-z8"></div>
+                            <mat-card-title style="font-weight: bold;">CheckServ</mat-card-title>
+                            <mat-card-subtitle>Un logiciel pour surveiller son serveur.</mat-card-subtitle>
+                        </mat-card-header>
+                        <img mat-card-image src="../../assets/checkserv-img.png"
+                            alt="Aperçu de la documentation que j'ai rédigé" style="max-height: 370px;">
+                        <mat-card-content>
+                            <p>
+                                Qu'est ce que CheckServ ? CheckServ est un service permettant de surveiller le bon
+                                fonctionnement d'un ou plusieurs
+                                serveurs. Si l'un des serveurs n'est plus joignable, le logiciel enverra automatiquement
+                                un mail aux utilisateurs avec
+                                la date/heure et le serveur concerné.
+                                CheckServ permet aussi de surveiller des services rattachés à un serveur. Si l'un des
+                                services n'est plus joignable par
+                                l'extérieur, alors le logiciel enverra un mail.
+                            </p>
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <button mat-button class="menu-button"
+                                (click)="redirect('https://github.com/gpatruno/Checkserv')">
+                                <div>
+                                    <mat-icon><i class="fab fa-github-square"></i></mat-icon>
                                 </div>
                             </button>
                         </mat-card-actions>
@@ -145,7 +182,8 @@
                 <div class="col">
                     <mat-card>
                         <mat-card-header>
-                            <mat-card-title style="font-weight: bold;"> Voyages <i class="fas fa-plane-departure" style="margin-left: 10px;"></i> </mat-card-title>
+                            <mat-card-title style="font-weight: bold;"> Voyages <i class="fas fa-plane-departure"
+                                    style="margin-left: 10px;"></i> </mat-card-title>
                         </mat-card-header>
                         <div class="row">
                             <div class="col">
@@ -163,7 +201,8 @@
                 <div class="col">
                     <mat-card>
                         <mat-card-header>
-                            <mat-card-title style="font-weight: bold;"> Sports <i class="fas fa-biking" style="margin-left: 10px;"></i> </mat-card-title>
+                            <mat-card-title style="font-weight: bold;"> Sports <i class="fas fa-biking"
+                                    style="margin-left: 10px;"></i> </mat-card-title>
                         </mat-card-header>
                         <div class="row">
                             <div class="col">
@@ -180,7 +219,8 @@
                 <div class="col">
                     <mat-card>
                         <mat-card-header>
-                            <mat-card-title style="font-weight: bold;"> Musique <i class="fas fa-music" style="margin-left: 10px;"></i> </mat-card-title>
+                            <mat-card-title style="font-weight: bold;"> Musique <i class="fas fa-music"
+                                    style="margin-left: 10px;"></i> </mat-card-title>
                         </mat-card-header>
                         <div class="row">
                             <div class="col">
@@ -200,12 +240,14 @@
                 <div class="col">
                     <mat-card>
                         <mat-card-header>
-                            <mat-card-title style="font-weight: bold;"> Jeux vidéos <i class="fas fa-gamepad" style="margin-left: 10px;"></i> </mat-card-title>
+                            <mat-card-title style="font-weight: bold;"> Jeux vidéos <i class="fas fa-gamepad"
+                                    style="margin-left: 10px;"></i> </mat-card-title>
                         </mat-card-header>
                         <div class="row">
                             <div class="col">
                                 <span>
-                                    League of Legends / TFT / Rocket League / Guild Wars 2 / Raft / Minecraft / Among Us /
+                                    League of Legends / TFT / Rocket League / Guild Wars 2 / Raft / Minecraft / Among Us
+                                    /
                                     Valorant / Apex / Satisfactory
                                 </span>
                             </div>
